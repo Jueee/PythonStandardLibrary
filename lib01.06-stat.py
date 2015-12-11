@@ -5,6 +5,7 @@ stat 模块
 import stat
 import os,time
 
+
 st = os.stat('samples/sample.txt')
 print('mode','=>',oct(stat.S_IMODE(st[stat.ST_MODE])))
 
